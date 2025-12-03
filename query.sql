@@ -10,6 +10,8 @@ SELECT full_name, email FROM Customers;
 
 SELECT * FROM Accounts;
 
+SELECT account_number FROM Accounts;
+
 
 
 
