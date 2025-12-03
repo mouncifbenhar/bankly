@@ -18,6 +18,9 @@ SELECT * FROM Accounts WHERE balance <= 0 ;
 
 SELECT * FROM Accounts WHERE account_type = "Savings";
 
+SELECT * FROM Accounts WHERE customerid = 1 ;
+
+
 
 
 
