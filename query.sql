@@ -14,6 +14,8 @@ SELECT account_number FROM Accounts;
 
 SELECT * FROM Accounts WHERE balance > 10000;
 
+SELECT * FROM Accounts WHERE balance <= 0 ;
+
 
 
 
