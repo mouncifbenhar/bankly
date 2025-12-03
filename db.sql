@@ -31,3 +31,43 @@ CREATE TABLE Transactions (
     accountid INT NOT NULL,
     FOREIGN KEY (accountid) REFERENCES Accounts(account_id)
 );
+
+INSERT INTO Customers (full_name, email, phone, registration_date)
+VALUES 
+('monsef benhar','monsef@gmail.com','0707070707',CURDATE()), 
+('mouad zyani','mouad@gmail.com','0706060606',CURDATE()),
+('wassim rifi','wassim@gmail.com','0705050505',CURDATE()),
+('khalid botwil','khalid@gmail.com','0704040404',CURDATE()),
+('bouchra depanag','bouchra@gmail.com','0703030303',CURDATE());
+
+
+
+INSERT INTO Advisors (full_name,email)
+VALUES
+('youssef el amire','yousef@gmail.com'),
+('sara boutaleb','sara@gmail.com'),
+('hamza idrisi','hamza@gmail.com'),
+('imane lock','imane@gmail.com'),
+('walid moutawakil','walid@gmail.com');
+
+
+
+INSERT INTO Accounts (account_number, balance, account_type, customerid, advisorid)
+VALUES
+('ACCT1001', 2500.75, 'Savings', 1, 1),
+('ACCT1002', 12000.00, 'Checking', 2, 2),
+('ACCT1003', 540.20, 'Checking', 3, 2),
+('ACCT1004', 9999.99, 'Business', 4, 3),
+('ACCT1005', 150.00, 'Checking', 5, 2);
+
+
+
+INSERT INTO Transactions (amount, transaction_type, transaction_date, accountid)
+VALUES
+(250.00, 'debit', CURDATE(), 1),
+(1200.50, 'credit', CURDATE(), 2),
+(75.99, 'debit', CURDATE(), 3),
+(5000.00, 'debit', CURDATE(), 4),
+(320.10, 'credit', CURDATE(), 5);
+
+
