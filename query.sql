@@ -4,6 +4,7 @@ VALUES
 
 UPDATE Customers SET phone = "0607080901" WHERE customer_id = 1;
 
+SELECT * FROM Customers;
 
 
 
