@@ -8,5 +8,8 @@ SELECT * FROM Customers;
 
 SELECT full_name, email FROM Customers;
 
+SELECT * FROM Accounts;
+
+
 
 
